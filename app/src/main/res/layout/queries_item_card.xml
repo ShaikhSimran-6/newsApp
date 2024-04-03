@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:elevation="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:src="@drawable/user_profile"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_47sdp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shaikh Simran"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="@color/midnight_blue"/>
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@shaikhsimran"
+            android:textColor="#646464"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@+id/linear1">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which language is better Java or Kotlin?"
+        android:textColor="@color/midnight_blue"
+        android:fontFamily="@font/segoe_ui_bold"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_below="@+id/linear2">
+
+        <ImageButton
+            android:id="@+id/qna_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/qna_comment"/>
+
+        <TextView
+            android:id="@+id/qna_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 answers"
+            android:textSize="12sp"
+            android:textColor="@color/midnight_blue"
+            android:fontFamily="@font/lee_ui_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/linear3"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_below="@id/linear2">
+
+        <ImageButton
+            android:id="@+id/like_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/like"/>
+
+        <TextView
+            android:id="@+id/like_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400 likes"
+            android:textSize="12sp"
+            android:textColor="@color/midnight_blue"
+            android:fontFamily="@font/lee_ui_bold"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

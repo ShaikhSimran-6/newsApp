@@ -6,5 +6,11 @@
         <item name="android:statusBarColor">@color/midnight_blue</item>
     </style>
 
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
     <style name="Theme.NewsApp_1" parent="Base.Theme.NewsApp_1" />
 </resources>
